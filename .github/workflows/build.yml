@@ -1,0 +1,11 @@
+name: Test nested workflow CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  call-workflow-B-in-local-repo:
+    uses: ./.github/workflows/workflow-B.yml
+    with:
+      environment: dev
