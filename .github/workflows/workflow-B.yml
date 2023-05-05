@@ -6,9 +6,6 @@ on:
       environment:
         required: true
         type: string
-
-env:
-  nom_capitaine: "Roger"
   
 jobs:
   build:
@@ -17,4 +14,3 @@ jobs:
     - name: Echo ${{ inputs.environment }}
       run: |
         echo ${{ inputs.environment }}
-        echo $nom_capitaine
